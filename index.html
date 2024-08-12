@@ -27,7 +27,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Prompt:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     
-
+<style>
+    .eapps-widget-toolbar-panel {
+    display: none !important;
+}
+</style>
     <!--==============================
 	    All CSS File
 	============================== -->
@@ -80,7 +84,7 @@
                             <div class="title-area text-center mb-30">
                                 <span class="sub-title style2 txt-white">RSVP
                                 </span>
-                                <h2 class="sec-title">Make Reservation</h2>
+                                <h2 class="sec-title">ENQUIRE NOW</h2>
                             </div>
                             <form action="mail.php" method="POST" class="reservation-form ajax-contact">
                                 <div class="row">
@@ -105,7 +109,7 @@
                                     <div class="col-lg-6">
                                         <div class="form-group style-4 form-icon-left">
                                             <i class="far fa-calendar-alt"></i>
-                                            <input type="date" class="form-control style-border" name="date" id="date">
+                                            <input type="date" class="form-control style-border" placeholder="Tentative Date" name="date" id="date" >
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
@@ -116,7 +120,7 @@
                                     </div>
                                 </div>
                                 <div class="form-btn col-12 text-center">
-                                    <button type="submit" class="btn">MAKE RESERVATION</button>
+                                    <button type="submit" class="btn">ENQUIRE NOW</button>
                                 </div>
                             </form>
                         </div>
@@ -139,9 +143,10 @@
                     <div class="title-area text-center mb-30">
                         <span class="sub-title style2 txt-white">RSVP
                         </span>
-                        <h2 class="sec-title">Make Reservation</h2>
+                        <h2 class="sec-title">ENQUIRE NOW</h2>
                     </div>
-                    <form action="mail.php" method="POST" class="reservation-form ajax-contact">
+                    
+                    <!-- <form action="mail.php" method="POST" class="reservation-form ajax-contact">
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="form-group style-4 form-icon-left">
@@ -164,7 +169,7 @@
                             <div class="col-lg-6">
                                 <div class="form-group style-4 form-icon-left">
                                     <i class="far fa-calendar-alt"></i>
-                                    <input type="date" class="form-control style-border" name="date" id="date">
+                                    <input type="date" class="form-control style-border" name="date" id="date" placeholder="Tentative Date">
                                 </div>
                             </div>
                             <div class="col-lg-12">
@@ -173,11 +178,24 @@
                                     <input type="text" class="form-control style-border" name="message" id="event" placeholder="Select Event">
                                 </div>
                             </div>
+                            <div class="col-lg-12">
+                                <div class="form-group style-4 form-icon-left">
+                                    <i class="fas fa-box"></i>
+                                    <input type="text" class="form-control style-border" name="message" id="event" placeholder="Select Event">
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-group style-4 form-icon-left">
+                                <i class="far fa-comment"></i>
+                                <textarea name="message" placeholder="Type Your Message" id="contactForm" class="form-control style-border"></textarea>
+                            </div>
                         </div>
                         <div class="form-btn col-12 text-center">
-                            <button type="submit" class="btn">MAKE RESERVATION</button>
+                            <button type="submit" class="btn">ENQUIRE NOW</button>
                         </div>
-                    </form>
+                    </form> -->
                 </div>
             </div>
         </div>
@@ -300,7 +318,7 @@
                                 </h1>
                                 <!-- <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.1s">LAVISH WEDDING</h1> -->
                                 <div class="btn-group" data-ani="slideinup" data-ani-delay="0.4s">
-                                    <a href="#Quotation" class="btn style2">MAKE RESERVATION </a>
+                                    <a href="#Quotation" class="btn style2">ENQUIRE NOW </a>
                                 </div>
                             </div>
                         </div>
@@ -330,7 +348,7 @@
                                 <h1 class="hero-title" data-ani="slideindown" data-ani-delay="0.1s">For Your Special Day</h1>
                                 <!-- <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.1s">LAVISH WEDDING</h1> -->
                                 <div class="btn-group" data-ani="slideinup" data-ani-delay="0.4s">
-                                    <a href="#Quotation" class="btn style2">MAKE RESERVATION </a>
+                                    <a href="#Quotation" class="btn style2">ENQUIRE NOW </a>
                                 </div>
                             </div>
                         </div>
@@ -365,7 +383,7 @@
                             <p class="sec-text">Discover the ultimate destination for your dream wedding or special occasion at Hotel SKS Grand Palace in Vrindavan. With five elegantly designed banquet halls and a sprawling lawn, our venue is perfectly suited for any celebration, from grand weddings to intimate family gatherings. Our expansive spaces provide the flexibility to host events of any size, ensuring your occasion is as spectacular as you've imagined.</p>
                         </div>
                         <div class="btn-wrap mt-40">
-                            <a href="#Quotation" class="btn">MAKE RESERVATION</a>
+                            <a href="#Quotation" class="btn">ENQUIRE NOW</a>
                         </div>
                     </div>                    
                 </div>
@@ -388,6 +406,9 @@
                         <div class="project-card-details">
                             <h3>SKS Grand Emerald Hall (Max Capacity 60 Pax)</h3>
                             <p class="project-date">This venue provides an open balcony, perfect for breezy brunches beneath the blue sky or enchanting moonlit dinners. Its versatility makes it a favourite among corporates, offering a dual-purpose space for various occasions.</p>
+                            <div class="btn-group" >
+                                <a href="#Quotation" class="btn style2" style="color: #fff !important;">ENQUIRE NOW </a>
+                            </div>
                         </div>
                     </div>
                 </div> 
@@ -399,6 +420,9 @@
                         <div class="project-card-details">
                             <h3>SKS Grand Pearl Hall (Max Capacity 200 Pax)</h3>
                             <p class="project-date">True to its name, the ceremony hall at our hotel in Mathura, Vrindavan is a true gem, located on the lower ground (LG) level. It offers a vibrant and serene atmosphere, akin to the lustre of natural pearls, ensuring your events are as memorable as they are beautiful.</p>
+                            <div class="btn-group" >
+                                <a href="#Quotation" class="btn style2" style="color: #fff !important;">ENQUIRE NOW </a>
+                            </div>
                         </div>
                     </div>
                 </div>  
@@ -410,6 +434,9 @@
                         <div class="project-card-details">
                             <h3>SKS grand mile banquet (Max Capacity 1000 Pax)</h3>
                             <p class="project-date">This banquet hall at our hotel in Vrindavan sparkles with lavishness, featuring a towering 50-foot ceiling and Roman-style architecture. A top priority among politicians, celebrities, and industrialists, it boasts lush lawns and modern squares, ideal for basking in the sun while enjoying refreshing drinks.</p>
+                            <div class="btn-group" >
+                                <a href="#Quotation" class="btn style2" style="color: #fff !important;">ENQUIRE NOW </a>
+                            </div>
                         </div>
                     </div>
                 </div> 
@@ -421,6 +448,9 @@
                         <div class="project-card-details">
                             <h3>SKS Grand Palace Banquet (Max Capacity 1000 Pax)</h3>
                             <p class="project-date">Are you seeking relief from the scorching sun? Look no further than our hotel in Mathura, Vrindavan home to the longest yard, offering serene garden views. It's the perfect spot to effortlessly host lunches and dinners for your squad with finesse.</p>
+                            <div class="btn-group" >
+                                <a href="#Quotation" class="btn style2" style="color: #fff !important;">ENQUIRE NOW </a>
+                            </div>
                         </div>
                     </div>
                 </div> 
@@ -432,6 +462,9 @@
                         <div class="project-card-details">
                             <h3>SKS Grand Park (Max Capacity 4000 Pax)</h3>
                             <p class="project-date">This venue will give you the experience of a dreamy oasis with a magical giant palm tree in the middle of the garden and a pre-set stage to give you a good line of sight of your guests in this spectacular garden.</p>
+                            <div class="btn-group" >
+                                <a href="#Quotation" class="btn style2" style="color: #fff !important;">ENQUIRE NOW </a>
+                            </div>
                         </div>
                     </div>
                 </div>              
@@ -613,7 +646,7 @@
     <!--==============================
     Portfolio Area  
     ==============================-->
-    <section id="gallery" class="portfolio-page space " data-bg-src="assets/img/bg/portfolio-1-bg.jpg">
+    <!-- <section id="gallery" class="portfolio-page space " data-bg-src="assets/img/bg/portfolio-1-bg.jpg">
         <div class="portfolio-shape1_1 shape-mockup jump d-lg-block d-none" data-top="1%" data-right="-1%">
             <img src="assets/img/normal/portfolio-shape_1-1.png" alt="img">
         </div>
@@ -651,10 +684,6 @@
                         <div class="project-img global-img">
                             <img src="https://sksgrandpalace.com/images/new-gallery/img-9.jpg" alt="portfolio">
                         </div>
-                        <!-- <div class="project-card-details">
-                            <p class="subtitle">Miranda & Malena</p>
-                            <h3 class="title"><a href="project-details.html">Best Weeding Of The Year</a></h3>
-                        </div> -->
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 filter-item cat4 cat2">
@@ -662,10 +691,6 @@
                         <div class="project-img global-img">
                             <img src="https://sksgrandpalace.com/images/new-gallery/img-31.jpg" alt="portfolio">
                         </div>
-                        <!-- <div class="project-card-details">
-                            <p class="subtitle">Miranda & Malena</p>
-                            <h3 class="title"><a href="project-details.html">Best Weeding Of The Year</a></h3>
-                        </div> -->
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 filter-item cat3">
@@ -673,10 +698,6 @@
                         <div class="project-img global-img">
                             <img src="https://sksgrandpalace.com/images/new-gallery/img-1.jpg" alt="portfolio">
                         </div>
-                        <!-- <div class="project-card-details">
-                            <p class="subtitle">Miranda & Malena</p>
-                            <h3 class="title"><a href="project-details.html">Best Weeding Of The Year</a></h3>
-                        </div> -->
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 filter-item cat2 cat4">
@@ -684,10 +705,6 @@
                         <div class="project-img global-img">
                             <img src="https://sksgrandpalace.com/images/new-gallery/img-30.jpg" alt="portfolio">
                         </div>
-                        <!-- <div class="project-card-details">
-                            <p class="subtitle">Miranda & Malena</p>
-                            <h3 class="title"><a href="project-details.html">Best Weeding Of The Year</a></h3>
-                        </div> -->
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 filter-item cat3">
@@ -695,10 +712,6 @@
                         <div class="project-img global-img">
                             <img src="https://sksgrandpalace.com/images/new-gallery/img-6.jpg" alt="portfolio">
                         </div>
-                        <!-- <div class="project-card-details">
-                            <p class="subtitle">Miranda & Malena</p>
-                            <h3 class="title"><a href="project-details.html">Best Weeding Of The Year</a></h3>
-                        </div> -->
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 filter-item cat1">
@@ -706,26 +719,18 @@
                         <div class="project-img global-img">
                             <img src="https://sksgrandpalace.com/images/new-gallery/img-17.jpg" alt="portfolio">
                         </div>
-                        <!-- <div class="project-card-details">
-                            <p class="subtitle">Miranda & Malena</p>
-                            <h3 class="title"><a href="project-details.html">Best Weeding Of The Year</a></h3>
-                        </div> -->
                     </div>
                 </div>
             </div>
-            <!-- <div class="btn-wrap justify-content-center">
-                <a href="project-2.html" class="btn">
-                    LOAD MORE IMAGES 
-                </a>
-            </div> -->
+          
         </div>
-    </section>   
+    </section>    -->
     
     
     <!--==============================
         Contact Area  
     ==============================-->
-    <div id="Quotation" class="contact-area-1 space overflow-hidden" data-bg-src="assets/images/contact-1-bg.jpg">
+    <!-- <div id="Quotation" class="contact-area-1 space overflow-hidden" >
         <div class="contact-shape1_1 shape-mockup jump d-lg-block d-none" data-top="0%" data-right="-8%">
             <img src="assets/img/normal/contact-shape_1-1.png" alt="img">
         </div>  
@@ -735,13 +740,15 @@
         <div class="container-fluid p-0">
             <div class="contact-form-area space">
                 <div class="title-area text-center title-anim">
-                    <span class="sub-title style2 text-white">LET US KNOW IF YOU COMING
+                    <span class="sub-title style2 txt-black">LET US KNOW IF YOU COMING
                     </span>
-                    <h2 class="sec-title text-white">WE CANT WAIT TO SEE YOU!</h2>
+                    <h2 class="sec-title txt-black">WE CANT WAIT TO SEE YOU!</h2>
                 </div>
                 <div class="row">
-                    <div class="col-lg-12">
-                        <form action="mail.php" method="POST" class="contact-form ajax-contact">
+                    <div class="col-lg-12"> -->
+                        <!-- <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+                    <div class="elfsight-app-12ca0f59-be7d-432c-9c08-3723a01853f4" data-elfsight-app-lazy></div> -->
+                        <!-- <form action="mail.php" method="POST" class="contact-form ajax-contact">
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form-group form-icon-left">
@@ -776,19 +783,19 @@
                             </div>
 
                             <div class="form-btn col-12 text-center">
-                                <button type="submit" class="btn">MAKE RESERVATION</button>
+                                <button type="submit" class="btn">ENQUIRE NOW</button>
                             </div>
-                        </form>
-                    </div>   
+                        </form> -->
+                    <!-- </div>   
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!--==============================
     Share Area  
     ==============================-->
-    <div class="position-relative space-bottom space">
+    <div id="Quotation" class="position-relative space-bottom space">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
@@ -799,7 +806,9 @@
                     </div>
                 </div>
                 <div class="col-lg-6 text-center">
-                    <div class="title-anim">
+                    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+                    <div class="elfsight-app-12ca0f59-be7d-432c-9c08-3723a01853f4" data-elfsight-app-lazy></div>
+                    <!-- <div class="title-anim">
                         <div class="title-area mb-0">
                             <span class="sub-title style2">@hotelsksgrandpalace</span>
                             <h2 class="sec-title">Let’s Capture your best <br> <span class="style-italic">moments & event</span>
@@ -808,7 +817,7 @@
                         <div class="btn-area mt-35">
                             <a href="#Quotation" class="btn">SHARE WITH US</a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -817,7 +826,7 @@
     <!--==============================
     Cta Area  
     ==============================-->
-    <div class="cta-area-2 space-bottom title-anim">
+    <!-- <div class="cta-area-2 space-bottom title-anim">
         <div class="container">
             <div class="row gy-4 align-items-center">
                 <div class="col-lg-6">
@@ -826,13 +835,129 @@
                     </a>
                 </div>
                 <div class="col-lg-6">
-                    <a href="reservation.html" class="cta-btn btn">
+                    <a href="#Quotation" class="cta-btn btn">
                         Get a Quotation!
                     </a>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
+
+    <div class="container" style="padding-bottom: 60px;">
+        <h2>Frequently Asked Questions</h2>
+        <div class="accordion">
+          <div class="accordion-item">
+            <button id="accordion-button-1" aria-expanded="false">
+              <span class="accordion-title">What Is the Maximum Capacity of the Banquet Hall?</span>
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                The banquet hall at our hotel offers 5 distinct categories, each uniquely themed, spacious, and beautifully crafted for a lavish experience each banquet hall features an exquisitely designed chandelier, with each one telling its own unique story. Capacities vary, ensuring the perfect fit for any event size.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-2" aria-expanded="false">
+              <span class="accordion-title">Is Accommodation Available for Guests Attending Events at The Banquet Hall?</span>
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Yes, accommodation is available for guests attending events at SKS Grand Palace. We offer a range of room categories to suit different needs, including:
+              </p>
+              <ul>
+                <li><b>Deluxe Double Rooms (143 sq. ft): </b> Featuring queen beds, tea and coffee facilities, wardrobe, Wi-Fi, and toiletries. We have 19 of these rooms.</li>
+                <li><b>Super Deluxe Rooms (308 sq. ft): </b>Equipped with a working table, wardrobe, Wi-Fi, toiletries, and hot & cold water. We have 5 of these rooms.</li>
+                <li><b>Family Deluxe Rooms (392 sq. ft): </b>Ideal for larger groups, with a work desk, toiletries, and hot & cold water. We offer 10 of these rooms.</li>
+              </ul>
+              <p>Our facilities include a restaurant, paid pickup/drop services, room service, an elevator, housekeeping, and power backup to ensure a comfortable stay for your guests.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-3" aria-expanded="false">
+              <span class="accordion-title">How Far is SKS Grand Palace from The City?</span>
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                SKS Grand Palace is ideally located in the heart of the region, conveniently located on Mathura Vrindavan Road. It is a short drive from both Mathura and central Vrindavan, making it easily accessible for your guests coming from either city. This central location offers the convenience of being close to both cities, while still providing a serene setting for your event.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-4" aria-expanded="false">
+              <span class="accordion-title">What Are the Peak Dates for Events at SKS Grand Palace?</span>
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                The peak period for events at SKS Grand Palace runs from October to April, including long weekends. During this time, Diwali and New Year are considered super peak dates, with a vibrant atmosphere and heightened demand as families and friends come together to celebrate these festive occasions.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-5" aria-expanded="false">
+              <span class="accordion-title">Is There Parking Available for Guests?</span>
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Conveniently located, the SKS Grand Palace offers ample parking for your guests. Our venue is just a short drive from many religious places in Mathura and Vrindavan, making it easy for visitors to access our facilities.
+              </p>
+            </div>
+          </div>
+
+
+
+          <div class="accordion-item">
+            <button id="accordion-button-6" aria-expanded="false">
+              <span class="accordion-title">Can I Visit the Venue Before Making a Reservation?</span>
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Absolutely! We encourage you to visit our venue to see the space and discuss your event requirements with our team. Please schedule a visit in advance.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-7" aria-expanded="false">
+              <span class="accordion-title">What are the Nearby Attractions for the Guest to Explore?</span>
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>Mathura, the beautiful city where our hotel is located, is home to numerous stunning attractions. From historic temples to serene ghats, there's so much to explore and experience. Guests at SKS Grand Palace have the opportunity to explore a variety of significant and spiritually enriching attractions nearby:</p>
+            <ul>
+                <li><b>Shri Krishna Janmasthan Temple, Mathura</b></li>
+                <li><b>Banke Bihari Temple</b></li>
+                <li><b>Prem Mandir</b></li>
+                <li><b>Vaishno Devi Temple</b></li>
+                <li><b>Radha Vallabh Temple</b></li>
+            </ul>
+            <p>For more information about these attractions and other nearby things to do, please visit our <b><a href="https://sksgrandpalace.com/things-to-do.html">Things to Do page.</a></b> </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-8" aria-expanded="false">
+              <span class="accordion-title">What Amenities Are Included with The Banquet Hall Booking?</span>
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>When you book our banquet hall, you receive a full suite of amenities designed to ensure your event is both elegant and seamless:</p>
+              <ul>
+                <li><b>Largest Chandelier</b></li>
+                <li><b>One-stop shop for Events</b></li>
+                <li><b>Prem Mandir</b></li>
+                <li><b>Catering Services</b></li>
+                <li><b>Venue</b></li>
+                <li><b>Decor</b></li>
+                <li><b>Entertainment</b></li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <div class="floating_btn">
@@ -959,6 +1084,8 @@
     ============================== -->
     <!-- Jquery -->
     <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/faqs.js"></script>
+    
     <!-- Slick Slider -->
     <script src="assets/js/slick.min.js"></script>
     <!-- Bootstrap -->
