@@ -9930,6 +9930,7 @@ span.select2-selection.select2-selection--single:focus {
   padding: 30px;
   position: relative;
   margin-top: 10px;
+  text-align: center;
   /* Medium devices */
 }
 .counter-card:after {
@@ -14539,8 +14540,12 @@ a{
 .accordion-content ul {
   list-style: none;
 }
-.accordion-content b{
+.faq-text b{
   color: #ff8225;
+  font-weight: 500;
+}
+ ul{
+list-style: none !important; 
 }
 .accordion .accordion-content {
   opacity: 0;
