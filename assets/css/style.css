@@ -14559,3 +14559,16 @@ list-style: none !important;
   font-weight: 300;
   margin: 2em 0;
 }
+
+#venues .testi-box2_icon:after{
+  display: none;
+}
+#venues .testi-box2_text{
+  font-size: 18px;
+  text-align: left;
+  padding: 0 45px;
+}
+#venues  .testi-box2_name{
+  font-size: 20px;
+    margin-bottom: 10px;
+}
